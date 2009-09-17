@@ -1,0 +1,3 @@
+in PhpMyAdmin in SQL eingeben
+GRANT ALL PRIVILEGES ON usr_p106991_3.* TO p106991d2@localhost IDENTIFIED BY 'schueler';
+FLUSH PRIVILEGES;

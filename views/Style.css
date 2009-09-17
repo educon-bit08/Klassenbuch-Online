@@ -1,0 +1,91 @@
+td, th
+
+{
+
+	font-family: Verdana;
+
+	font-size: 10pt;
+
+}
+
+.pulldown
+{
+	width: 100px;
+}
+
+#filter
+{	
+	position: absolute;
+	top:60px;
+	left:10px;
+}
+
+.tablehead 
+{
+	border-style:none;
+	text-align:center;
+	background-color: #666666;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.schueler
+{
+	border-style:none;
+	background-color: #666666;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.noten
+{
+	border-style:none;
+	text-align:center;
+}
+
+.scrollTable table
+
+{
+
+	border-collapse: collapse;
+
+}
+
+.scrollTable table td, .scrollTable table th
+
+{
+
+	vertical-align: top;
+
+	text-align: left;
+
+	margin: 0px;
+
+	padding-left: 10px;
+
+	padding-right: 10px;
+
+	padding-top: 1px;
+
+	padding-bottom: 1px;
+
+	white-space: nowrap;
+
+	border-top: solid 1px #aaaaaa;
+
+	border-bottom: solid 1px #aaaaaa;
+
+}
+
+th
+
+{
+
+	background-color: #666666;
+
+	color: #ffffff;
+
+	font-weight: bold;
+
+}
+
