@@ -20,6 +20,7 @@ include ('includings/dmlable.php');
 
 // Exceptions
 include ('includings/class.mysqlexception.php');
+include ('includings/class.userinformexception.php');
 
 // Klassen zur Entwicklung
 include ('includings/class.html.php');
@@ -82,7 +83,7 @@ $_SESSION['user']['user_id']    //ID des eingeloggten Users
 if(isset($what)){   
 	include 'controller/' .$action. '.php';
 } else {
-	include 'views/test_us.php'; // Weiterleitung auf Startseite
+	include 'views/test_excelimporter.php'; // Weiterleitung auf Startseite
 	//include 'views/test_us.php'; // Weiterleitung auf Startseite
 }
 

@@ -2,7 +2,7 @@
 
 //Datensätze für die Datenbankverbindung
 
-define('DB_SERVER', "localhost");
+define('DB_SERVER', "127.0.0.1");
 define('DB_USER', "p106991d2");
 define('DB_PASSWD', "schueler");
 define('DB_NAME', "usr_p106991_3");

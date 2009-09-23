@@ -415,8 +415,12 @@ switch ($what) {
 					echo $_FILES ['userfile'] ['error'] [$i];
 				}
 			} else {
-				if (move_uploaded_file ( $file_temp, 'excel/' . $file_name . '' )) {
+				if (move_uploaded_file ( $file_temp, 'excel/' . $userfile . '' )) {
 					echo '<h3>Upload Successful!</h3>';
+					$ei = new ExcelImporter('excel/' . $userfile);
+					$ei-> saveFileToDb();
+					// hier kommt AUfruf der Klasse ExcelImporter hin, um die hochgeladene Datei zu parsen und
+					// in der DB zu speichern
 				} else {
 					echo '<h3>ERROR</h3>';
 				}

@@ -222,7 +222,19 @@ class Klasse extends Db implements Dmlable {
 		$this->schuelers = $s->getAllAsObject(' AND klasse_id = ' .$this->klasse_id. ' ');
 	}
 	
-	
+	public function getKlasseToName($name){
+		$klassen = $this->getAllAsObject();
+		
+		foreach($klassen as $klasse){
+			$dummy = strcmp($klasse->getName(),$name);
+			if(strcmp($klasse->getName(),$name) === 0){
+				// wenn Klasse gefunden ist, endet diese Methode
+				return $klasse;
+			}
+		}
+		
+		return FALSE;
+	}
 
 }
 
